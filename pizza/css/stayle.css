@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    height: 100vh;
+    background-image: url(/pizza/img/background-pizza-set-delicious-pizzas-bacon-cheese-mushrooms-top-view-183994608.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+header {
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0,0,0,0.4);
+}
+
+header nav{
+    display: flex;
+    flex: 1 1 600px;
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-top: 35px;
+    justify-items: center;
+    padding-right: 0 20px;
+
+}
+
+header nav a {
+    padding: 10px 20px;
+    text-decoration: none; /* we want to remove the underline that came with line <a>  */
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 20px;
+    margin-right: 80px;
+
+}
+
+header .logo{
+    flex: 1 1 600px;
+    font-size: 40px;
+    margin-left: 30px;
+    width: 100px;
+    height: 100px;
+    flex: 0 1 150px;
+}
+
+header .logo img{
+    border-radius: 100px;
+    height: inherit; /* img will inherit the height of the parent "logo" which has 100px 100px */
+    width: inherit;
+}
+
+/*------main------*/
+
+.main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h1{
+    font-size: 4em; /* 4 times the size of the default font */
+    padding-bottom: 20px;
+}
+
+.main p{
+    font-size: 13px;
+    padding-bottom: 20px;
+    color: yellow;
+    font-weight: 400;
+}
+
+.btn{
+    /*first we will choose siz of padding and border-radius to make the background transparent */
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 100px;
+    border: 2px solid #fff;
+}
+
+.btn:hover{
+    background-color: orange;
+    border-color: darkgoldenrod;
+    transform: rotate(5deg);
+    transition: all 0.5s ease-in-out;
+    color: #000;
+}
+/*------nav --------*/
